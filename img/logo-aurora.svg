@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 519.83 177.54">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: GRAVHEZ, GRAVHEZ;
+        font-size: 127.13px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(0 105.58)"><tspan class="cls-3" x="0" y="0">A</tspan><tspan class="cls-1" x="79.46" y="0">U</tspan><tspan class="cls-4" x="157.13" y="0">R</tspan><tspan x="236.72" y="0">ORA</tspan></text>
+</svg>
