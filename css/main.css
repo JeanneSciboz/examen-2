@@ -46,3 +46,20 @@ video {
 .row + .row {
   margin-top: 16px;
 }
+
+nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  margin: 64px 45px 231px;
+}
+
+@media (min-width: 992px) {
+  nav {
+    font-size: 20px;
+  }
+}
