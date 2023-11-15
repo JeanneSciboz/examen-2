@@ -54,12 +54,35 @@ nav {
   font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
-
   margin: 64px 45px 231px;
 }
 
 @media (min-width: 992px) {
   nav {
     font-size: 20px;
+    margin: 92px 366px 231px;
+  }
+}
+
+h1 {
+  margin: 0 57px;
+}
+
+.title-text {
+  font-size: 18px;
+  text-align: center;
+  margin: 0 86px;
+  font-weight: 300;
+  padding-bottom: 358px;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    margin: 0 444px;
+  }
+
+  .title-text {
+    font-size: 24px;
+    font-weight: 300;
   }
 }
