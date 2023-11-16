@@ -24,12 +24,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-
   font-size: 1rem;
   line-height: 1.25;
   font-family: "Raleway", sans-serif;
   background-color: var(--black);
   color: white;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 a {
@@ -92,5 +93,49 @@ header {
 
   header {
     margin-bottom: 270px;
+  }
+}
+
+h2 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.text-presentation {
+  padding-bottom: 45px;
+}
+
+.image-1 {
+  padding-bottom: 45px;
+}
+
+.image-2 {
+  padding-bottom: 130px;
+}
+
+.text-presentation-2 {
+  padding-bottom: 75px;
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+  }
+
+  .image-1 {
+    padding-bottom: 200px;
+  }
+
+  .image-2 {
+    padding-bottom: 130px;
+  }
+
+  .text-presentation-2 {
+    padding-bottom: 270px;
   }
 }
