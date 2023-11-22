@@ -3,7 +3,8 @@
 // ==================================== */
 
 :root {
-  --black: #25262e;
+  --black: #181717;
+  --gray: #25262e;
 }
 
 /* ====================================
@@ -76,6 +77,7 @@ h1 {
   font-weight: 300;
   padding-bottom: 358px;
 }
+
 header {
   background-color: blue;
   margin-bottom: 75px;
@@ -142,6 +144,7 @@ h2 {
 
 .subtitle {
   padding-bottom: 26px;
+  font-size: 16px;
 }
 
 h3 {
@@ -151,8 +154,40 @@ h3 {
   padding: 10px 0 10px 0;
 }
 
+.card {
+  margin-bottom: 68px;
+  font-size: 15px;
+}
+
+.button-menu {
+  background-color: var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 300;
+  aspect-ratio: 1.37;
+}
+
 @media (min-width: 992px) {
   .subttitle {
     padding-bottom: 130px;
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 7px 0 24px 0;
+  }
+
+  .card {
+    margin-bottom: 57px;
+    font-size: 24px;
+  }
+
+  .button-menu {
+    font-size: 36px;
   }
 }
