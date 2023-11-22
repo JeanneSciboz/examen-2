@@ -139,3 +139,20 @@ h2 {
     padding-bottom: 270px;
   }
 }
+
+.subtitle {
+  padding-bottom: 26px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 10px 0 10px 0;
+}
+
+@media (min-width: 992px) {
+  .subttitle {
+    padding-bottom: 130px;
+  }
+}
