@@ -121,6 +121,10 @@ h2 {
   padding-bottom: 75px;
 }
 
+.paragraphe {
+  margin-bottom: 15px;
+}
+
 @media (min-width: 992px) {
   h2 {
     font-size: 18px;
@@ -139,6 +143,10 @@ h2 {
 
   .text-presentation-2 {
     padding-bottom: 270px;
+  }
+
+  .paragraphe {
+    margin-bottom: none;
   }
 }
 
