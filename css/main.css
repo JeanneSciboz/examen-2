@@ -78,9 +78,29 @@ header {
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 35%;
-  right: 0%;
   opacity: 0.75;
+  top: 35%;
+  left: 60%;
+  animation-name: changePosition;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changePosition {
+  0% {
+    top: 35%;
+    left: 60%;
+  }
+
+  50% {
+    top: 30%;
+    left: 58%;
+  }
+
+  100% {
+    top: 35%;
+    left: 60%;
+  }
 }
 
 .shape-2 {
@@ -92,6 +112,36 @@ header {
   top: 80%;
   left: 0%;
   opacity: 0.75;
+  animation-name: changePosition2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changePosition2 {
+  0% {
+    top: 80%;
+    left: 0%;
+  }
+
+  25% {
+    top: 85%;
+    left: 10%;
+  }
+
+  50% {
+    top: 75%;
+    left: 25%;
+  }
+
+  100% {
+    top: 80%;
+    left: 0%;
+  }
+}
+
+100% {
+  top: 80%;
+  left: 0%;
 }
 
 .shape-3 {
@@ -103,6 +153,31 @@ header {
   top: 10%;
   left: 0%;
   opacity: 0.75;
+  animation-name: changePosition3;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changePosition3 {
+  0% {
+    top: 10%;
+    left: 0%;
+  }
+
+  25% {
+    top: 15%;
+    left: 10%;
+  }
+
+  50% {
+    top: 5%;
+    left: 25%;
+  }
+
+  100% {
+    top: 10%;
+    left: 0%;
+  }
 }
 
 .shape-4 {
@@ -112,8 +187,28 @@ header {
   height: 100px;
   position: absolute;
   top: 50%;
-  right: 0%;
+  left: 70%;
   opacity: 0.75;
+  animation-name: changePosition4;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changePosition4 {
+  0% {
+    top: 50%;
+    left: 80%;
+  }
+
+  50% {
+    top: 40%;
+    left: 58%;
+  }
+
+  100% {
+    top: 50%;
+    left: 80%;
+  }
 }
 
 .shape-5 {
@@ -125,6 +220,31 @@ header {
   top: 0%;
   left: 0%;
   opacity: 0.75;
+  animation-name: changePosition5;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changePosition5 {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+
+  25% {
+    top: 0%;
+    left: 15%;
+  }
+
+  50% {
+    top: 5%;
+    left: 25%;
+  }
+
+  100% {
+    top: 0%;
+    left: 0%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -141,6 +261,7 @@ header {
     top: 30%;
     right: 5%;
     opacity: 0.75;
+    filter: blur(1000px);
   }
 
   .shape-2 {
@@ -152,6 +273,7 @@ header {
     top: 70%;
     left: 0%;
     opacity: 0.75;
+    filter: blur(1000px);
   }
 
   .shape-3 {
@@ -163,6 +285,7 @@ header {
     top: -5%;
     left: 0%;
     opacity: 0.75;
+    filter: blur(1000px);
   }
 
   .shape-4 {
@@ -174,6 +297,19 @@ header {
     top: 50%;
     right: 10%;
     opacity: 0.75;
+    filter: blur(1000px);
+  }
+
+  .shape-5 {
+    background-color: var(--blue);
+    border-radius: 400px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    opacity: 0.75;
+    filter: blur(1000px);
   }
 }
 
