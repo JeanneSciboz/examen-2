@@ -63,11 +63,13 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
+  overflow: hidden;
 }
 
 .header-content {
   position: relative;
-  backdrop-filter: blur(75px);
+  backdrop-filter: blur(600px);
+  height: 100vh;
 }
 
 .shape-1 {
@@ -75,6 +77,10 @@ header {
   border-radius: 100px;
   width: 150px;
   height: 150px;
+  position: absolute;
+  top: 35%;
+  right: 0%;
+  opacity: 0.75;
 }
 
 .shape-2 {
@@ -82,20 +88,93 @@ header {
   border-radius: 100px;
   width: 150px;
   height: 150px;
-}
-
-.shape-3 {
-  background-color: var(--blue);
-  border-radius: 100px;
-  width: 150px;
-  height: 150px;
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  opacity: 0.75;
 }
 
 .shape-3 {
   background-color: var(--light-blue);
   border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  opacity: 0.75;
+}
+
+.shape-4 {
+  background-color: var(--blue);
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  opacity: 0.75;
+}
+
+.shape-5 {
+  background-color: var(--light-green);
+  border-radius: 100px;
   width: 150px;
   height: 150px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 0.75;
+}
+
+@media (min-width: 992px) {
+  .header-content {
+    height: 100vh;
+  }
+
+  .shape-1 {
+    background-color: var(--light-green);
+    border-radius: 400px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    opacity: 0.75;
+  }
+
+  .shape-2 {
+    background-color: var(--purple);
+    border-radius: 400px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    opacity: 0.75;
+  }
+
+  .shape-3 {
+    background-color: var(--light-blue);
+    border-radius: 400px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -5%;
+    left: 0%;
+    opacity: 0.75;
+  }
+
+  .shape-4 {
+    background-color: var(--blue);
+    border-radius: 400px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    opacity: 0.75;
+  }
 }
 
 nav {
@@ -119,8 +198,12 @@ nav a {
   }
 }
 
+h1 img {
+  width: 200px;
+}
+
 h1 {
-  padding: 0 57px;
+  text-align: center;
 }
 
 .title-text {
@@ -133,7 +216,6 @@ h1 {
 
 header {
   margin-bottom: 75px;
-  padding-bottom: 52px;
 }
 
 .arrow {
@@ -145,8 +227,16 @@ header {
 }
 
 @media (min-width: 992px) {
-  h1 {
+  /* h1 {
     padding: 0 444px;
+  } */
+
+  h1 img {
+    width: 580px;
+  }
+
+  h1 {
+    text-align: center;
   }
 
   .title-text {
@@ -164,7 +254,6 @@ header {
 }
 
 main {
-  padding: 0 10px;
 }
 
 h2 {
@@ -180,6 +269,32 @@ h2 {
 
 .image-1 {
   padding-bottom: 90px;
+  width: calc(100% + 12px);
+  max-inline-size: none;
+}
+
+@media (min-width: 576px) {
+  .image-1 {
+    width: calc(100% + (100vw - 532px) / 2);
+  }
+}
+
+@media (min-width: 768px) {
+  .image-1 {
+    width: calc(100% + (100vw - 712px) / 2);
+  }
+}
+
+@media (min-width: 992px) {
+  .image-1 {
+    width: calc(100% + (100vw - 952px) / 2);
+  }
+}
+
+@media (min-width: 1400px) {
+  .image-1 {
+    width: calc(100% + (100vw - 1312px) / 2);
+  }
 }
 
 .image-2 {
@@ -196,7 +311,6 @@ h2 {
 
 @media (min-width: 992px) {
   main {
-    padding: 0 150px;
   }
 
   h2 {
@@ -213,6 +327,7 @@ h2 {
 
   .image-2 {
     padding-bottom: 130px;
+    width: 100%;
   }
   .text-presentation-1 {
     font-size: 30px;
@@ -270,7 +385,7 @@ h3 {
   }
 
   .card {
-    margin-bottom: 212px;
+    margin-bottom: 57px;
     font-size: 24px;
   }
 
@@ -294,6 +409,7 @@ h3 {
     font-size: 30px;
     padding: 25px;
     margin-bottom: 270px;
+    margin-top: 212px;
   }
 }
 
@@ -323,6 +439,7 @@ footer {
   display: flex;
   gap: 15px;
   justify-content: center;
+  padding-top: 10px;
 }
 
 footer a {
@@ -352,11 +469,9 @@ footer img {
     display: flex;
     gap: 15px;
     justify-content: left;
-    padding-top: 38px;
+    padding-top: 10px;
   }
 
   .infos {
-    display: flex;
-    justify-content: space-between;
   }
 }
