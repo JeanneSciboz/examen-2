@@ -194,12 +194,19 @@ nav a {
 @media (min-width: 992px) {
   nav {
     font-size: 20px;
+    padding: 92px 100px 231px;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    font-size: 20px;
     padding: 92px 366px 231px;
   }
 }
 
 h1 img {
-  width: 200px;
+  width: 246px;
 }
 
 h1 {
@@ -232,7 +239,7 @@ header {
   } */
 
   h1 img {
-    width: 580px;
+    width: 586px;
   }
 
   h1 {
@@ -391,6 +398,8 @@ h3 {
 
   .button-menu {
     font-size: 36px;
+    width: 360px;
+    height: 262px;
   }
 }
 
